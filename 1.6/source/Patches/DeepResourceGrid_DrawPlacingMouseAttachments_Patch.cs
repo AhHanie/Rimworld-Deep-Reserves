@@ -29,38 +29,7 @@ namespace Deep_Reserves.Patches
 
             List<ThingDef> resourceDefs = new List<ThingDef>();
             List<long> resourceTotals = new List<long>();
-
-            for (int i = 0; i < DeepDrillUtility.NumCellsToScan; i++)
-            {
-                IntVec3 cell = center + GenRadial.RadialPattern[i];
-                if (!cell.InBounds(___map))
-                {
-                    continue;
-                }
-
-                ThingDef cellDef = __instance.ThingDefAt(cell);
-                if (cellDef == null)
-                {
-                    continue;
-                }
-
-                int count = __instance.CountAt(cell);
-                if (count <= 0)
-                {
-                    continue;
-                }
-
-                int index = resourceDefs.IndexOf(cellDef);
-                if (index < 0)
-                {
-                    resourceDefs.Add(cellDef);
-                    resourceTotals.Add(count);
-                }
-                else
-                {
-                    resourceTotals[index] += count;
-                }
-            }
+            DeepDrillResources.CountAt(___map, center, resourceDefs, resourceTotals);
 
             if (resourceDefs.Count == 0)
             {
