@@ -68,6 +68,7 @@
     <Compile Include="Mod.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Patches\DeepResourceGrid_RenderMouseAttachments_Patch.cs" />
+    <Compile Include="Patches\DeepResourceGrid_DrawPlacingMouseAttachments_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

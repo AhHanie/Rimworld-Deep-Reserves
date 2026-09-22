@@ -6,8 +6,8 @@
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
-    <description>When you hover a revealed deep-resource tile with a deep scanner or deep drill selected (or while placing a drill), this mod replaces the vanilla per-tile readout with the total resource remaining in that entire connected deposit, instead of just the one cell under your cursor.</description>
-    <modVersion>1.0.0</modVersion>
+    <description>When you hover a revealed deep-resource tile with a deep scanner or built deep drill selected, this mod replaces the vanilla per-tile readout with the total resource remaining in that entire connected deposit, instead of just the one cell under your cursor. While placing a deep drill, it instead shows the total of each resource type actually reachable within that drill's mining range, so you can see what it will dig up before you build it.</description>
+    <modVersion>1.1.0</modVersion>
     <url>https://steamcommunity.com/sharedfiles/filedetails/?id=3806200966</url>
     <modDependencies>
         <li>

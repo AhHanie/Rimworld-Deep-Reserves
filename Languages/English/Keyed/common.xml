@@ -3,4 +3,5 @@
     <DeepReserves.LoadingLabel>Deep Reserves Loading</DeepReserves.LoadingLabel>
     <DeepReserves.SettingsTitle>Deep Reserves</DeepReserves.SettingsTitle>
     <DeepReserves.DeepDepositRemaining>{COUNT} {RESOURCE_label} underground in this deposit.</DeepReserves.DeepDepositRemaining>
+    <DeepReserves.DeepDrillRangeRemaining>{COUNT} {RESOURCE_label} in deep drill range.</DeepReserves.DeepDrillRangeRemaining>
 </LanguageData>
