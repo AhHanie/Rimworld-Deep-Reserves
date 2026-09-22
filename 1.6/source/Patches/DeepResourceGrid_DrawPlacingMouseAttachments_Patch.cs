@@ -76,7 +76,7 @@ namespace Deep_Reserves.Patches
             for (int i = 0; i < resourceDefs.Count; i++)
             {
                 ThingDef resourceDef = resourceDefs[i];
-                Rect rect = new Rect(vector.x + offset, vector.y - UI.CurUICellSize() + offset + 29f * i, 27f, 27f);
+                Rect rect = new Rect(vector.x + offset, vector.y - UI.CurUICellSize() + offset - 29f * i, 27f, 27f);
                 Widgets.ThingIcon(rect, resourceDef);
                 Widgets.Label(new Rect(rect.xMax + 4f, rect.y, 999f, 29f), "DeepReserves.DeepDrillRangeRemaining".Translate(NamedArgumentUtility.Named(resourceDef, "RESOURCE"), resourceTotals[i].Named("COUNT")));
             }
